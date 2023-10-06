@@ -513,7 +513,169 @@ Nós vamos mudar aqui pro segundo elemento e vamos ver como ele se comporta.
 *Trocar no target e dá play
 
 
+*Jasmine*
 
+Jasmine é uma forma de realizar um teste unitário, ele vai realizar testes em códigos em javaScript
+
+Vamos lá ro passo a passo...
+
+
+1.  Acesse o endereço https://jasmine.github.io/ e clique em
+Get Started.
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/f86b5583-dec1-4a05-8f0f-e24a42571c14)
+
+
+2. Na janela seguinte, role a tela até encontrar Jasmine
+Standalone e clique em releases page.
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/fe2ef857-02eb-4c5c-b35d-7ab5eb4f8397)
+
+3. Clique no link jasmine-standalone para baixar o arquivo
+compactado.
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/cc5b8ee2-f674-48dd-8e55-ca3ac0a33c39)
+
+
+4. Descompacte o arquivo salvo, abra a pasta e clique duas
+vezes em SpecRunner para executar o Jasmine.
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/20c46578-9248-42a5-ae3b-3302f59cde4b)
+
+
+5. O Jasmine será executado no navegador.
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/fbc57e51-c135-4561-94ed-7389ce07659d)
+
+
+6. Retorne para a pasta do jasmine-standalone e digite cmd na
+barra de localização e dê enter.
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/374ef058-8afc-4df0-bb41-115f0aed8201)
+
+
+7. No terminal, digite code . para abrir o VS Code.
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/c6439fd1-73f4-407c-941b-e8a5253e4912)
+
+
+8. No VS Code, apague os arquivos teste PlayerSpec.js,
+SpecHelper.js, Player.js e Song.js. Mantenha as pastas src e
+spec. Para isso, selecione os arquivos, clique com o botão
+direito e selecione delete. Na janela de alerta, selecione Move
+to Recycle Bin.
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/a3646bf7-58a6-4202-ba6b-309a53a41241)
+
+
+9. Selecione a pasta src e clique no ícone Novo Arquivo.
+Nomeie o arquivo como calculadora.js.
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/2ccb1b13-1a0d-44f2-ba65-c0fd9f41046a)
+
+
+10. Crie também o arquivo maioridade.js na pasta src, além
+dos arquivos calculadora.spec.js e maioridade.spec.js na
+pasta spec.
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/96445435-57bc-4dd5-8ef8-aa8a263c831c)
+
+
+11. A seguir, implemente o algoritmo da calculadora no
+arquivo calculadora.js, conforme o código a seguir.
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/6bacdad1-bcac-48ac-a6dd-0a6e5e1a1025)
+
+
+12. Agora, implemente o algoritmo para calcular a maioridade
+no arquivo maioridade.js, conforme o código a seguir.
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/e3d82771-6c79-4772-b50f-4e31c16d1229)
+
+
+13. Dentro de SpecRunner.html, atualize o nome dos arquivos
+de referência, conforme código a seguir.
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/5bedf175-72ff-469c-a8cc-444e1358bdb6)
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/207baeba-0387-4445-8ff7-fad7e7697d8b)
+
+
+14. No arquivo calculadora.spec.js, crie o algoritmo para
+verificar operações aritméticas, como:
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/0f8dc1b1-ce80-4b7c-94fa-f90eb0f17d7e)
+
+Nesse trecho, esperamos que a soma 1 + 2 = 3 e que a soma 9
+
++ 9 = 18. Salve as alterações em seus arquivos.
+
+
+15. Execute o SpecRunner.html em seu navegador, clicando
+duas vezes sobre o arquivo na pasta do projeto. O navegador
+deve mostrar um resultado como a seguir:
+
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/e17721f9-34c1-41e1-aa18-95001a370acd)
+
+
+16. Em calculadora.spec.js, mude o valor da segunda soma
+para 1:
+
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/a7cf7e39-0cfe-4845-8659-72980a16f789)
+
+Nesse trecho, esperamos que a soma 1 + 2 = 3 e que a soma 9
+
++ 9 = 1. Salve as alterações em seus arquivos.
+
+
+17. Atualize o SpecRunner.html em seu navegador e o
+resultado deve ser como a seguir:
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/6f88c57c-6d2d-4e81-b1c5-8232aecb00be)
+
+Note que o teste mostra qual o erro detectado.
+
+
+18. No arquivo maioridade.spec.js, implemente o teste de
+verificação de idade.
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/5952c419-d847-411c-9a82-7b65a36d7b81)
+
+Nesse trecho, esperamos que 18 seja ‘Maior Idade’ e que 10
+seja ‘Menor Idade’. Salve as alterações.
+
+
+19. Nesse trecho, esperamos que 18 seja ‘Maior Idade’ e que 10
+seja ‘Menor Idade’. Salve as alterações.
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/c407a813-2c88-4b13-a3a3-405e02b3d98f)
+
+
+20.Atualize o SpecRunner.html em seu navegador e o
+resultado deve ser como a seguir:
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/e6fd5d66-c736-40d4-9765-d4848df9ed7c)
+
+Note que o teste mostra qual o erro detectado.
+
+*Documentação*
+
+1. Baixe o modelo de plano de teste e preencha os dados
+solicitados para o teste unitário de sistema, tanto para a
+calculadora quanto para a maioridade.
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/af4f2553-04ae-4b94-8ebe-1d3f9b10bdc8)
+
+Salve as alterações no doc e envie em formato pdf.
+
+*Dicas!*
+
+Para acessar informações sobre o sistema operacional e
+hardware de sua máquina, use o atalho Windows + pause
+
+![image](https://github.com/CTM-SENAI-134/Pc-TesteFrontEnd/assets/144062335/a5a5ab64-fb05-43d7-a7f0-11aeb5666d33)
 
 
 
